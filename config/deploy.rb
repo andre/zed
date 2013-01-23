@@ -5,8 +5,7 @@ require "bundler/capistrano"
 
 set :application, "zed"
 
-# simple upload -- no scm involved
-set :repository, 
+set :repository, "git@github.com:andre/zed.git"
 set :user, "deploy"
 
 role :web, "50.56.82.31"                          # Your HTTP server, Apache/etc
